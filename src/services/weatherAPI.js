@@ -1,7 +1,7 @@
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 async function getCoordinates(city) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
     const response = await fetch(url);
 
     if (!response.ok) {
@@ -22,7 +22,7 @@ async function getCoordinates(city) {
 }
 
 async function getWeather(lat, lon) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     const response = await fetch(url);
 
     if (!response.ok) {

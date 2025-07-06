@@ -12,7 +12,7 @@ const WeatherCard = ({ weatherData }) => {
 
     const weatherMain = weather[0].main;
     const weatherDescription = weather[0].description;
-    const weatherIcon = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+    const weatherIcon = `https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
 
     return (
         <div className="bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl p-6 text-white shadow-xl mt-5">

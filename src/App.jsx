@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { getWeather, getCoordinates } from './services/weatherAPI'
-import './App.css'
 import SearchBar from './components/SearchBar'
 import WeatherCard from './components/WeatherCard'
 import { FaSearchLocation } from "react-icons/fa";
